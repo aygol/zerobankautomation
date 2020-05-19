@@ -1,0 +1,520 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 950973800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on login page",
+            "match": {
+              "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-19T15:08:55.735Z",
+        "before": [
+          {
+            "result": {
+              "duration": 11747579300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.step_definitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Authorized user able to login",
+        "description": "",
+        "id": "user-should-be-able-to-login;authorized-user-able-to-login",
+        "after": [
+          {
+            "result": {
+              "duration": 706841400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3605310000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user enters credentials",
+            "match": {
+              "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_enters_credentials()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 31582100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "authorized user should be able to login",
+            "match": {
+              "location": "com.zerobank.step_definitions.LoginStepDefinitions.authorized_user_should_be_able_to_login()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5984600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "account summary page should be displayed",
+            "match": {
+              "location": "com.zerobank.step_definitions.LoginStepDefinitions.account_summary_page_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginTest"
+          },
+          {
+            "name": "@smoke_test"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 995339500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on login page",
+            "match": {
+              "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-19T15:09:12.866Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5087619500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.step_definitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "User with wrong username can\u0027t login",
+        "description": "",
+        "id": "user-should-be-able-to-login;user-with-wrong-username-can-t-login",
+        "after": [
+          {
+            "result": {
+              "duration": 638360200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3386986100,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user enters credentials with Wrong UserName",
+            "match": {
+              "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_enters_credentials_with_Wrong_UserName()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8733200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user should not able to login",
+            "match": {
+              "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_should_not_able_to_login()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 39560700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "login error message should be displayed",
+            "match": {
+              "location": "com.zerobank.step_definitions.LoginStepDefinitions.login_error_message_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginTest"
+          },
+          {
+            "name": "@smoke_test"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 873712700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on login page",
+            "match": {
+              "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-19T15:09:23.034Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5070419600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.step_definitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "User with wrong password should not able login",
+        "description": "",
+        "id": "user-should-be-able-to-login;user-with-wrong-password-should-not-able-login",
+        "after": [
+          {
+            "result": {
+              "duration": 1109157600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3363904200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user enters credentials with Wrong Password",
+            "match": {
+              "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_enters_credentials_with_Wrong_Password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4987800,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user should not able to login",
+            "match": {
+              "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_should_not_able_to_login()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 32911700,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "login error message should be displayed",
+            "match": {
+              "location": "com.zerobank.step_definitions.LoginStepDefinitions.login_error_message_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginTest"
+          },
+          {
+            "name": "@smoke_test"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1165327400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on login page",
+            "match": {
+              "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-19T15:09:33.495Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5158683300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.step_definitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "User with Blank Username should not able to login",
+        "description": "",
+        "id": "user-should-be-able-to-login;user-with-blank-username-should-not-able-to-login",
+        "after": [
+          {
+            "result": {
+              "duration": 725939200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3378023500,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user enters credentials with Blank Username",
+            "match": {
+              "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_enters_credentials_with_Blank_Username()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4986500,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "user should not able to login",
+            "match": {
+              "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_should_not_able_to_login()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 28925700,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "login error message should be displayed",
+            "match": {
+              "location": "com.zerobank.step_definitions.LoginStepDefinitions.login_error_message_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginTest"
+          },
+          {
+            "name": "@smoke_test"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 895605800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on login page",
+            "match": {
+              "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-19T15:09:43.971Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5112441900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.step_definitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 36,
+        "name": "User with Blank Password should not able to login",
+        "description": "",
+        "id": "user-should-be-able-to-login;user-with-blank-password-should-not-able-to-login",
+        "after": [
+          {
+            "result": {
+              "duration": 759379800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3367185700,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "user enters credentials with Blank Password",
+            "match": {
+              "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_enters_credentials_with_Blank_Password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 17206900,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "user should not able to login",
+            "match": {
+              "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_should_not_able_to_login()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 45219100,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "login error message should be displayed",
+            "match": {
+              "location": "com.zerobank.step_definitions.LoginStepDefinitions.login_error_message_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginTest"
+          },
+          {
+            "name": "@smoke_test"
+          }
+        ]
+      }
+    ],
+    "name": "User should be able to login",
+    "description": "",
+    "id": "user-should-be-able-to-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "name": "@LoginTest",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      },
+      {
+        "name": "@smoke_test",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 12
+        }
+      }
+    ]
+  }
+]
