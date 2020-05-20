@@ -19,6 +19,6 @@ import org.junit.runner.RunWith;
 )
 
 
-public class CukesRunner_smoke {
+public class SmokeRunner {
 
 }
