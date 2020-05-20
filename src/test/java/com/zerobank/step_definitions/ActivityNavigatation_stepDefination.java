@@ -4,7 +4,8 @@ import com.zerobank.pages.AccountActivity;
 import com.zerobank.pages.AccountSummary;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.testng.Assert;
+import org.junit.Assert;
+
 
 public class ActivityNavigatation_stepDefination {
 

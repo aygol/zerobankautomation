@@ -3,63 +3,30 @@
     "line": 3,
     "elements": [
       {
-        "line": 5,
-        "name": "",
+        "line": 6,
+        "name": "Log in and navigate to statements and documents tab",
         "description": "",
         "type": "background",
         "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 950973800,
+              "duration": 1152296700,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "user is on login page",
             "match": {
               "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_is_on_login_page()"
             },
             "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-05-19T15:08:55.735Z",
-        "before": [
+          },
           {
             "result": {
-              "duration": 11747579300,
+              "duration": 3786731300,
               "status": "passed"
             },
-            "match": {
-              "location": "com.zerobank.step_definitions.Hooks.setup()"
-            }
-          }
-        ],
-        "line": 7,
-        "name": "Authorized user able to login",
-        "description": "",
-        "id": "user-should-be-able-to-login;authorized-user-able-to-login",
-        "after": [
-          {
-            "result": {
-              "duration": 706841400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.zerobank.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 3605310000,
-              "status": "passed"
-            },
-            "line": 9,
+            "line": 8,
             "name": "user enters credentials",
             "match": {
               "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_enters_credentials()"
@@ -68,65 +35,30 @@
           },
           {
             "result": {
-              "duration": 31582100,
+              "duration": 262043000,
               "status": "passed"
             },
-            "line": 10,
-            "name": "authorized user should be able to login",
+            "line": 9,
+            "name": "user navigates to \"Online Statements\" tab",
             "match": {
-              "location": "com.zerobank.step_definitions.LoginStepDefinitions.authorized_user_should_be_able_to_login()"
+              "arguments": [
+                {
+                  "val": "\"Online Statements\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.zerobank.step_definitions.StatementsAndDocumentsSteps.user_navigates_to_tab(java.lang.String)"
             },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 5984600,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "account summary page should be displayed",
-            "match": {
-              "location": "com.zerobank.step_definitions.LoginStepDefinitions.account_summary_page_should_be_displayed()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@LoginTest"
-          },
-          {
-            "name": "@smoke_test"
+            "keyword": "When "
           }
         ]
       },
       {
-        "line": 5,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 995339500,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user is on login page",
-            "match": {
-              "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_is_on_login_page()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-05-19T15:09:12.866Z",
+        "start_timestamp": "2020-05-20T14:40:54.326Z",
         "before": [
           {
             "result": {
-              "duration": 5087619500,
+              "duration": 6304887900,
               "status": "passed"
             },
             "match": {
@@ -134,14 +66,14 @@
             }
           }
         ],
-        "line": 15,
-        "name": "User with wrong username can\u0027t login",
+        "line": 16,
+        "name": "Recent statements per year",
         "description": "",
-        "id": "user-should-be-able-to-login;user-with-wrong-username-can-t-login",
+        "id": "statements-and-documents;recent-statements-per-year;;2",
         "after": [
           {
             "result": {
-              "duration": 638360200,
+              "duration": 711919500,
               "status": "passed"
             },
             "match": {
@@ -150,81 +82,108 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 3386986100,
+              "duration": 2095926200,
               "status": "passed"
             },
-            "line": 17,
-            "name": "user enters credentials with Wrong UserName",
+            "line": 12,
+            "name": "the user selects the Recent Statements Year \"2009\"",
             "match": {
-              "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_enters_credentials_with_Wrong_UserName()"
+              "arguments": [
+                {
+                  "val": "\"2009\"",
+                  "offset": 44
+                }
+              ],
+              "location": "com.zerobank.step_definitions.StatementsAndDocumentsSteps.the_user_selects_the_Recent_Statements_Year(java.lang.String)"
             },
-            "keyword": "Then "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 8733200,
+              "duration": 15621900,
               "status": "passed"
             },
-            "line": 18,
-            "name": "user should not able to login",
+            "line": 13,
+            "name": "\"2\" statements should be displayed for that year",
             "match": {
-              "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_should_not_able_to_login()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 39560700,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "login error message should be displayed",
-            "match": {
-              "location": "com.zerobank.step_definitions.LoginStepDefinitions.login_error_message_should_be_displayed()"
+              "arguments": [
+                {
+                  "val": "\"2\"",
+                  "offset": 0
+                }
+              ],
+              "location": "com.zerobank.step_definitions.StatementsAndDocumentsSteps.statements_should_be_displayed_for_that_year(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@LoginTest"
-          },
-          {
-            "name": "@smoke_test"
+            "name": "@statement_documents"
           }
         ]
       },
       {
-        "line": 5,
-        "name": "",
+        "line": 6,
+        "name": "Log in and navigate to statements and documents tab",
         "description": "",
         "type": "background",
         "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 873712700,
+              "duration": 905448300,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "user is on login page",
             "match": {
               "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_is_on_login_page()"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3635844800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters credentials",
+            "match": {
+              "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_enters_credentials()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 211317700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user navigates to \"Online Statements\" tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Online Statements\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.zerobank.step_definitions.StatementsAndDocumentsSteps.user_navigates_to_tab(java.lang.String)"
+            },
+            "keyword": "When "
           }
         ]
       },
       {
-        "start_timestamp": "2020-05-19T15:09:23.034Z",
+        "start_timestamp": "2020-05-20T14:41:08.689Z",
         "before": [
           {
             "result": {
-              "duration": 5070419600,
+              "duration": 5179808700,
               "status": "passed"
             },
             "match": {
@@ -232,14 +191,14 @@
             }
           }
         ],
-        "line": 22,
-        "name": "User with wrong password should not able login",
+        "line": 17,
+        "name": "Recent statements per year",
         "description": "",
-        "id": "user-should-be-able-to-login;user-with-wrong-password-should-not-able-login",
+        "id": "statements-and-documents;recent-statements-per-year;;3",
         "after": [
           {
             "result": {
-              "duration": 1109157600,
+              "duration": 667093200,
               "status": "passed"
             },
             "match": {
@@ -248,81 +207,519 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 3363904200,
+              "duration": 2090770100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user selects the Recent Statements Year \"2010\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2010\"",
+                  "offset": 44
+                }
+              ],
+              "location": "com.zerobank.step_definitions.StatementsAndDocumentsSteps.the_user_selects_the_Recent_Statements_Year(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15621400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "\"2\" statements should be displayed for that year",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2\"",
+                  "offset": 0
+                }
+              ],
+              "location": "com.zerobank.step_definitions.StatementsAndDocumentsSteps.statements_should_be_displayed_for_that_year(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@statement_documents"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "Log in and navigate to statements and documents tab",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 942266900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user is on login page",
+            "match": {
+              "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3655381400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters credentials",
+            "match": {
+              "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_enters_credentials()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 177496500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user navigates to \"Online Statements\" tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Online Statements\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.zerobank.step_definitions.StatementsAndDocumentsSteps.user_navigates_to_tab(java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-20T14:41:21.395Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5139765800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.step_definitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Recent statements per year",
+        "description": "",
+        "id": "statements-and-documents;recent-statements-per-year;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 677952900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2070349200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user selects the Recent Statements Year \"2011\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2011\"",
+                  "offset": 44
+                }
+              ],
+              "location": "com.zerobank.step_definitions.StatementsAndDocumentsSteps.the_user_selects_the_Recent_Statements_Year(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 18950400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "\"2\" statements should be displayed for that year",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2\"",
+                  "offset": 0
+                }
+              ],
+              "location": "com.zerobank.step_definitions.StatementsAndDocumentsSteps.statements_should_be_displayed_for_that_year(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@statement_documents"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "Log in and navigate to statements and documents tab",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1014165600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user is on login page",
+            "match": {
+              "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3648551400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters credentials",
+            "match": {
+              "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_enters_credentials()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 211830500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user navigates to \"Online Statements\" tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Online Statements\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.zerobank.step_definitions.StatementsAndDocumentsSteps.user_navigates_to_tab(java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-20T14:41:34.081Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5207699200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.step_definitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Recent statements per year",
+        "description": "",
+        "id": "statements-and-documents;recent-statements-per-year;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 1502638500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2076531700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user selects the Recent Statements Year \"2012\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2012\"",
+                  "offset": 44
+                }
+              ],
+              "location": "com.zerobank.step_definitions.StatementsAndDocumentsSteps.the_user_selects_the_Recent_Statements_Year(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 18949300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "\"1\" statements should be displayed for that year",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 0
+                }
+              ],
+              "location": "com.zerobank.step_definitions.StatementsAndDocumentsSteps.statements_should_be_displayed_for_that_year(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@statement_documents"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "Log in and navigate to statements and documents tab",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 854533900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user is on login page",
+            "match": {
+              "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3613183100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters credentials",
+            "match": {
+              "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_enters_credentials()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 182283300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user navigates to \"Online Statements\" tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Online Statements\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.zerobank.step_definitions.StatementsAndDocumentsSteps.user_navigates_to_tab(java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-20T14:41:47.761Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5322768900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.step_definitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "Download statements",
+        "description": "",
+        "id": "statements-and-documents;download-statements;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 679628700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2105588200,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user selects the Recent Statements Year \"2009\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2009\"",
+                  "offset": 44
+                }
+              ],
+              "location": "com.zerobank.step_definitions.StatementsAndDocumentsSteps.the_user_selects_the_Recent_Statements_Year(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2103216900,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the user clicks on statement \"Statement 31/11/09(57K)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Statement 31/11/09(57K)\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.zerobank.step_definitions.StatementsAndDocumentsSteps.the_user_clicks_on_statement(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 947800,
               "status": "passed"
             },
             "line": 24,
-            "name": "user enters credentials with Wrong Password",
+            "name": "the downloaded file name should contain \"31-11-09\"",
             "match": {
-              "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_enters_credentials_with_Wrong_Password()"
+              "arguments": [
+                {
+                  "val": "\"31-11-09\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.zerobank.step_definitions.StatementsAndDocumentsSteps.the_downloaded_file_name_should_contain(java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 4987800,
+              "duration": 997700,
               "status": "passed"
             },
             "line": 25,
-            "name": "user should not able to login",
+            "name": "the file type should be \"pdf\"",
             "match": {
-              "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_should_not_able_to_login()"
+              "arguments": [
+                {
+                  "val": "\"pdf\"",
+                  "offset": 24
+                }
+              ],
+              "location": "com.zerobank.step_definitions.StatementsAndDocumentsSteps.the_file_type_should_be(java.lang.String)"
             },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 32911700,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "login error message should be displayed",
-            "match": {
-              "location": "com.zerobank.step_definitions.LoginStepDefinitions.login_error_message_should_be_displayed()"
-            },
-            "keyword": "Then "
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@LoginTest"
-          },
-          {
-            "name": "@smoke_test"
+            "name": "@statement_documents"
           }
         ]
       },
       {
-        "line": 5,
-        "name": "",
+        "line": 6,
+        "name": "Log in and navigate to statements and documents tab",
         "description": "",
         "type": "background",
         "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 1165327400,
+              "duration": 925062200,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "user is on login page",
             "match": {
               "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_is_on_login_page()"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3614057800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters credentials",
+            "match": {
+              "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_enters_credentials()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 165694000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user navigates to \"Online Statements\" tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Online Statements\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.zerobank.step_definitions.StatementsAndDocumentsSteps.user_navigates_to_tab(java.lang.String)"
+            },
+            "keyword": "When "
           }
         ]
       },
       {
-        "start_timestamp": "2020-05-19T15:09:33.495Z",
+        "start_timestamp": "2020-05-20T14:42:02.624Z",
         "before": [
           {
             "result": {
-              "duration": 5158683300,
+              "duration": 5231533500,
               "status": "passed"
             },
             "match": {
@@ -331,13 +728,13 @@
           }
         ],
         "line": 29,
-        "name": "User with Blank Username should not able to login",
+        "name": "Download statements",
         "description": "",
-        "id": "user-should-be-able-to-login;user-with-blank-username-should-not-able-to-login",
+        "id": "statements-and-documents;download-statements;;3",
         "after": [
           {
             "result": {
-              "duration": 725939200,
+              "duration": 727778400,
               "status": "passed"
             },
             "match": {
@@ -346,81 +743,143 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 3378023500,
+              "duration": 2072583700,
               "status": "passed"
             },
-            "line": 31,
-            "name": "user enters credentials with Blank Username",
+            "line": 22,
+            "name": "the user selects the Recent Statements Year \"2010\"",
             "match": {
-              "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_enters_credentials_with_Blank_Username()"
+              "arguments": [
+                {
+                  "val": "\"2010\"",
+                  "offset": 44
+                }
+              ],
+              "location": "com.zerobank.step_definitions.StatementsAndDocumentsSteps.the_user_selects_the_Recent_Statements_Year(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 4986500,
+              "duration": 2104545600,
               "status": "passed"
             },
-            "line": 32,
-            "name": "user should not able to login",
+            "line": 23,
+            "name": "the user clicks on statement \"Statement 01/12/10(57K)\"",
             "match": {
-              "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_should_not_able_to_login()"
+              "arguments": [
+                {
+                  "val": "\"Statement 01/12/10(57K)\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.zerobank.step_definitions.StatementsAndDocumentsSteps.the_user_clicks_on_statement(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 943200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the downloaded file name should contain \"01-12-10\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"01-12-10\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.zerobank.step_definitions.StatementsAndDocumentsSteps.the_downloaded_file_name_should_contain(java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 28925700,
               "status": "passed"
             },
-            "line": 33,
-            "name": "login error message should be displayed",
+            "line": 25,
+            "name": "the file type should be \"pdf\"",
             "match": {
-              "location": "com.zerobank.step_definitions.LoginStepDefinitions.login_error_message_should_be_displayed()"
+              "arguments": [
+                {
+                  "val": "\"pdf\"",
+                  "offset": 24
+                }
+              ],
+              "location": "com.zerobank.step_definitions.StatementsAndDocumentsSteps.the_file_type_should_be(java.lang.String)"
             },
-            "keyword": "Then "
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@LoginTest"
-          },
-          {
-            "name": "@smoke_test"
+            "name": "@statement_documents"
           }
         ]
       },
       {
-        "line": 5,
-        "name": "",
+        "line": 6,
+        "name": "Log in and navigate to statements and documents tab",
         "description": "",
         "type": "background",
         "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 895605800,
+              "duration": 835143200,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "user is on login page",
             "match": {
               "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_is_on_login_page()"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3601742300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters credentials",
+            "match": {
+              "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_enters_credentials()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 178407700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user navigates to \"Online Statements\" tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Online Statements\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.zerobank.step_definitions.StatementsAndDocumentsSteps.user_navigates_to_tab(java.lang.String)"
+            },
+            "keyword": "When "
           }
         ]
       },
       {
-        "start_timestamp": "2020-05-19T15:09:43.971Z",
+        "start_timestamp": "2020-05-20T14:42:17.467Z",
         "before": [
           {
             "result": {
-              "duration": 5112441900,
+              "duration": 5153554600,
               "status": "passed"
             },
             "match": {
@@ -428,14 +887,14 @@
             }
           }
         ],
-        "line": 36,
-        "name": "User with Blank Password should not able to login",
+        "line": 30,
+        "name": "Download statements",
         "description": "",
-        "id": "user-should-be-able-to-login;user-with-blank-password-should-not-able-to-login",
+        "id": "statements-and-documents;download-statements;;4",
         "after": [
           {
             "result": {
-              "duration": 759379800,
+              "duration": 731559600,
               "status": "passed"
             },
             "match": {
@@ -444,75 +903,260 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 3367185700,
+              "duration": 2103676300,
               "status": "passed"
             },
-            "line": 38,
-            "name": "user enters credentials with Blank Password",
+            "line": 22,
+            "name": "the user selects the Recent Statements Year \"2011\"",
             "match": {
-              "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_enters_credentials_with_Blank_Password()"
+              "arguments": [
+                {
+                  "val": "\"2011\"",
+                  "offset": 44
+                }
+              ],
+              "location": "com.zerobank.step_definitions.StatementsAndDocumentsSteps.the_user_selects_the_Recent_Statements_Year(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 17206900,
+              "duration": 2110432800,
               "status": "passed"
             },
-            "line": 39,
-            "name": "user should not able to login",
+            "line": 23,
+            "name": "the user clicks on statement \"Statement 05/12/11(57K)\"",
             "match": {
-              "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_should_not_able_to_login()"
+              "arguments": [
+                {
+                  "val": "\"Statement 05/12/11(57K)\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.zerobank.step_definitions.StatementsAndDocumentsSteps.the_user_clicks_on_statement(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3938400,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the downloaded file name should contain \"05-12-11\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"05-12-11\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.zerobank.step_definitions.StatementsAndDocumentsSteps.the_downloaded_file_name_should_contain(java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 45219100,
+              "duration": 2990600,
               "status": "passed"
             },
-            "line": 40,
-            "name": "login error message should be displayed",
+            "line": 25,
+            "name": "the file type should be \"pdf\"",
             "match": {
-              "location": "com.zerobank.step_definitions.LoginStepDefinitions.login_error_message_should_be_displayed()"
+              "arguments": [
+                {
+                  "val": "\"pdf\"",
+                  "offset": 24
+                }
+              ],
+              "location": "com.zerobank.step_definitions.StatementsAndDocumentsSteps.the_file_type_should_be(java.lang.String)"
             },
-            "keyword": "Then "
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@LoginTest"
+            "name": "@statement_documents"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "Log in and navigate to statements and documents tab",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 817785600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user is on login page",
+            "match": {
+              "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_is_on_login_page()"
+            },
+            "keyword": "Given "
           },
           {
-            "name": "@smoke_test"
+            "result": {
+              "duration": 3594542600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters credentials",
+            "match": {
+              "location": "com.zerobank.step_definitions.LoginStepDefinitions.user_enters_credentials()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 204705200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user navigates to \"Online Statements\" tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Online Statements\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.zerobank.step_definitions.StatementsAndDocumentsSteps.user_navigates_to_tab(java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-20T14:42:32.190Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5164416600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.step_definitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Download statements",
+        "description": "",
+        "id": "statements-and-documents;download-statements;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 707904800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2082580700,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user selects the Recent Statements Year \"2012\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2012\"",
+                  "offset": 44
+                }
+              ],
+              "location": "com.zerobank.step_definitions.StatementsAndDocumentsSteps.the_user_selects_the_Recent_Statements_Year(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2104443800,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the user clicks on statement \"Statement 01/10/12(57K)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Statement 01/10/12(57K)\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.zerobank.step_definitions.StatementsAndDocumentsSteps.the_user_clicks_on_statement(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 945700,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the downloaded file name should contain \"01-10-12\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"01-10-12\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.zerobank.step_definitions.StatementsAndDocumentsSteps.the_downloaded_file_name_should_contain(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "the file type should be \"pdf\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"pdf\"",
+                  "offset": 24
+                }
+              ],
+              "location": "com.zerobank.step_definitions.StatementsAndDocumentsSteps.the_file_type_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@statement_documents"
           }
         ]
       }
     ],
-    "name": "User should be able to login",
-    "description": "",
-    "id": "user-should-be-able-to-login",
+    "name": "Statements and Documents",
+    "description": "  As user, I should be able to view my statements and documents year in pdf format",
+    "id": "statements-and-documents",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Login.feature",
+    "uri": "file:src/test/resources/features/StatmentAndDocument.feature",
     "tags": [
       {
-        "name": "@LoginTest",
+        "name": "@statement_documents",
         "type": "Tag",
         "location": {
-          "line": 2,
+          "line": 1,
           "column": 1
-        }
-      },
-      {
-        "name": "@smoke_test",
-        "type": "Tag",
-        "location": {
-          "line": 2,
-          "column": 12
         }
       }
     ]
