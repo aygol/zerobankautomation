@@ -1,5 +1,4 @@
-
-@LoginTest @smoke_test
+@smoke_test  @login_test
 Feature: User should be able to login
 
 Background:
